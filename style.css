@@ -331,7 +331,7 @@ sl-input, #subscribe button {
 }
 
 /* ==========1024px x 768px========== */
-@media only screen and (min-width: 1024px) { 
+@media only screen and (max-width: 1024px) { 
 
     #learn {
         margin-right: 400px;
