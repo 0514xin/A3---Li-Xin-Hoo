@@ -1,0 +1,428 @@
+@font-face {
+    font-family: "PoetsenOne";
+    src:url("fonts/PoetsenOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RobagaRounded";
+    src:url("fonts/Robaga\ Rounded\ Regular.otf");
+}
+
+/* ==========NAVIGATION========== */
+nav {
+    width:100%; /* ==========fit exactly according to screen size========== */
+}
+
+#logo {
+    width: 120px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 15px;
+    font-family: "RobagaRounded";
+    transition: ease 0.5s;  /* ==========take half second to occur when hover========== */
+}
+
+.navigation a:hover {    /* ==========enable these changes when hover========== */
+    background-color: lightgreen;
+}
+
+#logo, .navigation, #navicon {
+    display: inline;
+    vertical-align: middle;
+}
+
+sl-icon {
+    margin-left: 5px;
+}
+
+#learn {
+    margin-right: 620px;
+}
+
+/* ==========IMAGE GALLERY========== */
+sl-carousel {
+    float: left;
+    position: relative;     /* ==========allow words and buttons overlay========== */
+    margin-bottom: 100px;
+}
+
+.carousel {
+    position: absolute;     /* ==========let words and buttons overlay========== */
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+#title {
+    font-family: PoetsenOne;
+    font-size: 36px;
+    width: 320px;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+#text {
+    font-family: RobagaRounded;
+    font-size: 18px;
+    width: 200px;
+    line-height: 35px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.buttons {
+    border: none;
+    background-color: #f7ffe5;
+    color: black;
+    font-family: "RobagaRounded";
+    font-size: 18px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 2px 3px black;
+}
+  
+.buttons span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.buttons span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.buttons:hover span {
+    padding-right: 25px;
+}
+  
+.buttons:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ==========SLOGAN========== */
+#slogan {
+    text-align: center;
+}
+
+.section, .section2, .section3 {
+    font-family: PoetsenOne;
+    font-size: 36px;
+}
+
+#slogan img {
+    width: 60px;
+}
+
+#p1 {
+    font-family: RobagaRounded;
+    font-size: 18px;
+    margin-left: 365px;
+    width: 40%;
+    line-height: 50px;
+}
+
+#line {
+    height: 2px;
+    width: 90%;
+    background-color: black;
+    margin: 100px 65px;
+}
+
+/* ==========ABOUT US========== */
+#character {
+    width:300px;
+    margin-top: 25px;
+}
+
+#section2 {
+    font-family: PoetsenOne;
+    font-size: 36px;
+}
+
+#p2 {
+    font-family: RobagaRounded;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#line2 {
+    height: 3px;
+    width: 390px;
+    background-color: black;
+}
+
+article {
+    position: relative; 
+    margin:auto;    /* ==========center content========== */
+    width:50%;  /* ==========width of paragraph========== */
+    margin-bottom: 100px;
+}
+
+.about {
+    position: absolute;
+    text-align: center;
+    top:0px;  
+    left:270px;
+}
+
+/* ==========SHOP COLLECTION========== */
+#gallery{
+    background-color: #c4d7b2;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.section2 {
+    margin-top: 10px;
+}
+
+.gallery {
+    display: inline-block; 
+    width: 31%;
+    margin: 0px 10px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.product {
+    position: absolute;
+    margin-left: -243px;
+    margin-top: 265px;
+    border: none;
+    background-color: #f7ffe5;
+    color: black;
+    font-family: "RobagaRounded";
+    font-size: 18px;
+    padding: 10px;
+    width: 230px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 2px 3px black;
+}
+
+.product span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.product span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.product:hover span {
+    padding-right: 25px;
+}
+  
+.product:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ==========ABOUT MATCHA========== */
+#aboutmatcha {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#aboutmatcha img {
+    width: 600px;
+    margin: 0px 300px 30px 300px;
+}
+
+/* ==========MATCHA BENEFITS========== */
+#matchabenefits {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#matchabenefits img {
+    width: 600px;
+    margin: 0px 300px 30px 300px;
+}
+
+/* ==========MATCHA RECIPES========== */
+#recipe {
+    text-align: center;
+    background-color: #c4d7b2;
+    padding: 10px 10px 30px 10px;
+    margin-bottom: 100px;
+}
+
+#images {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#images img {
+    width:33%
+}
+
+/* ==========REVIEWS========== */
+#review {
+    text-align: center;
+}
+
+sl-carousel {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.section3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#diagram {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* ==========FOOTER========== */
+footer {
+    background-color: #c4d7b2;
+    padding: 10px 10px 30px 10px;
+}
+.footer {
+    font-family: PoetsenOne;
+    font-size: 22px;
+}
+
+.link {
+    font-family: RobagaRounded;
+    font-size: 18px;
+}
+
+sl-input, #subscribe button {
+    display: inline-block;
+}
+
+#quicklinks, #followus, #subscribe {
+    display: inline-block;
+    margin: 10px 80px; 
+    vertical-align: top;
+}
+
+/* ==========1024px x 768px========== */
+@media only screen and (min-width: 1024px) { 
+
+    #learn {
+        margin-right: 400px;
+    }
+
+    .carousel {
+        margin-top: 50px;
+    }
+
+    #p1 {
+        margin-left: 300px;
+    }
+
+    #character {
+        margin-left: -50px;
+    }
+
+    .about {
+        left:220px;
+    }
+    
+    .gallery {
+        width: 30%;
+    }
+    
+    .product {
+        margin-top: 200px;
+    }
+
+    #aboutmatcha img {
+        margin-left: 200px;
+    }
+    
+    #matchabenefits img {
+        margin-left: 200px;
+    }
+
+    #quicklinks, #followus, #subscribe {
+        margin: 10px 45px; 
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+
+    #learn {
+        margin-right: 150px;
+    }
+
+    .carousel {
+        margin-left: 120px;
+        margin-top: 0px;
+    }
+
+    #p1 {
+        margin-left: 220px;
+    }
+
+    #character {
+        margin-left: -120px;
+    }
+
+    .about {
+        left:150px;
+    }
+    
+    .gallery {
+        width: 30%;
+    }
+    
+    .product {
+        margin-top: 150px;
+    }
+
+    #aboutmatcha img {
+        margin-left: 100px;
+    }
+    
+    #matchabenefits img {
+        margin-left: 100px;
+    }
+
+    #images img {
+        width:32%
+    }
+
+    #diagram {
+        display: none;
+    }
+    
+    #quicklinks, #followus, #subscribe {
+        margin: 10px 5px; 
+    }
+
+}

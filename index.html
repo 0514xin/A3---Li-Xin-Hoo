@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+
+    <link rel="stylesheet" href="./fullpage.css">
+    <script src="/fullpage.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/Kenko-Tea-Logo.png">
+    <title>Kenko Tea</title>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <!--NAVIGATION-->
+    <nav>
+        <a href="file:///C:/Users/Li%20Xin/OneDrive/Desktop/Sem%202/Web%20Design%202/A3%20-%20Li%20Xin%20Hoo/index.html"><img id="logo" src="images/Kenko-Tea-Logo.png" alt="Photo of Kenko Tea logo"></a> <!--link logo back to the homepage-->
+
+        <div class="navigation">
+            <a href="#home">Home</a>    
+            <a href="#line">About</a>
+            <a href="#gallery">Shop</a>
+            <a id="learn" href="#aboutmatcha">Learn</a>
+        </div>
+
+        <div id="navicon" style="font-size: 28px;">
+            <sl-icon name="search"></sl-icon>
+            <sl-icon name="person-circle"></sl-icon>
+            <sl-icon name="cart3"></sl-icon>
+        </div>
+    </nav>
+
+    <!--IMAGE GALLERY-->
+    <sl-carousel id="#home" loop navigation pagination>
+      <sl-carousel-item>
+        <img
+          alt="Kenko Tea product"
+          src="images/carousel-1.png"
+        />
+      </sl-carousel-item>
+      <sl-carousel-item>
+        <img
+          alt="Kenko Tea character logo"
+          src="images/carousel-2.png"
+        />
+      </sl-carousel-item>
+    </sl-carousel>
+    
+    <div class="carousel">
+        <p id="title">AUSTRALIA'S BEST MATCHA POWDER</p>
+        <p id="text">Enjoy great tasting matcha tea at home</p>
+        <button class="buttons"><span>Shop now</span></button>
+    </div>
+
+    <!--SLOGAN-->
+    <div id="slogan">
+      <p class="section">Welcome to our store</p>
+      <img src="images/leaf.png" alt="leaf icon">
+      <p id="p1">Start your day with tasty Kenko Matcha Green Tea for everyday wellbeing, health and optimal nutrition</p>
+    </div>
+
+    <div id="line"></div>
+
+    <!--ABOUT US-->
+    <article>
+      <img id="character" src="images/about.png" alt="Photo of character logo">
+
+      <div class="about">
+        <p id="section2">KENKO TEA</p>
+
+        <div id="line2"></div>
+
+        <p id="p2">We supply Japanese matcha green tea to customers at home, retail and wholesale throughout Australia</p>
+
+        <button class="buttons"><span>View more</span></button>
+      </div>
+    </article>
+
+    <!--SHOP COLLECTION-->
+    <section id="gallery">
+      <p class="section2">Shop Collection</p>
+
+      <div class="gallery">
+        <img src="images/product-1.jpeg" alt="Photo of ceremonial grade matcha">
+      </div>
+
+      <button class="product"><span>Ceremonial Grade Matcha</span></button>
+
+      <div class="gallery">
+        <img src="images/product-2.jpeg" alt="Photo of culinary grade matcha">
+      </div>
+
+      <button class="product"><span>Culinary Ceremonial Grade Matcha</span></button>
+
+      <div class="gallery">
+        <img src="images/product-3.jpeg" alt="Photo of organic matcha">    
+      </div>
+
+      <button class="product"><span>Organic Matcha</span></button>
+    </section>
+
+    <!--ABOUT MATCHA-->
+    <div id="aboutmatcha">
+      <p class="section">About Matcha</p>
+      <img src="images/about-matcha.png" alt="Photo of Kenko Tea production">    
+      <button class="buttons"><span>Learn more</span></button>
+    </div>
+
+    <div id="line"></div>
+
+    <!--MATCHA BENEFITS-->
+    <div id="matchabenefits">
+      <p class="section">Matcha Benefits</p>
+      <img src="images/matcha-benefits.png" alt="Photo of Kenko Tea graph">    
+      <button class="buttons"><span>Learn more</span></button>
+    </div>
+
+    <!--MATCHA RECIPES-->
+    <div id="recipe">
+      <p class="section">Matcha Recipes</p>
+      
+      <div id="images">
+        <img src="images/recipe-1.png" alt="Photo of matcha cookie">
+        <img src="images/recipe-2.png" alt="Photo of matcha drink">
+        <img src="images/recipe-3.png" alt="Photo of matcha cake">    
+      </div>
+
+      <button class="buttons"><span>Learn more</span></button>
+    </div>
+
+    <!--REVIEWS-->
+    <div id="review">
+      <p class="section">Let customers speak for us</p>
+      
+      <sl-carousel navigation pagination slides-per-page="3" slides-per-move="1">
+        <sl-carousel-item><img alt="Always great. The only matcha I'll buy is Kenko." src="images/review-1.png"></sl-carousel-item>
+        <sl-carousel-item><img alt="Same as always. 5 stars." src="images/review-2.png"></sl-carousel-item>
+        <sl-carousel-item><img alt="I liked it so much. It's now my daily habit." src="images/review-3.png"></sl-carousel-item>
+        <sl-carousel-item><img alt="Love Kenko. Have been using them since 2016." src="images/review-4.png"></sl-carousel-item>
+      </sl-carousel>
+    </div>
+
+    <p class="section3">Why Kenko Matcha?</p>
+    <div id="diagram"><img src="images/diagram.png" alt="Photo of Kenko Tea diagram"></div>
+
+    <!--FOOTER-->
+    <footer>
+      <div id="quicklinks">
+        <p class="footer">Quick Links</p>
+        <p class="link">About us</p>
+        <p class="link">About matcha</p>
+        <p class="link">Shop</p>
+        <p class="link">Matcha benefits</p>
+        <p class="link">Matcha recipes</p>
+      </div>
+
+      <div id="followus">
+        <p class="footer">Follow Us</p>
+        <div style="font-size: 32px;">
+          <sl-icon name="facebook"></sl-icon>
+          <sl-icon name="youtube"></sl-icon>
+          <sl-icon name="instagram"></sl-icon>
+          <sl-icon name="envelope"></sl-icon>
+        </div>
+      </div>
+
+      <div id="subscribe">
+        <p class="footer">Subscribe to get exclusive offers</p>
+        <sl-input placeholder="Email"></sl-input>
+        <button class="buttons"><span>Subscribe</span></button>
+      </div>
+    </footer>
+
+
+
+
+</body>
+</html>
